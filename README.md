@@ -33,12 +33,12 @@ Pour installer et lancer ce projet sur votre machine, suivez ces étapes :
 - **Contrôle Utilisateur** : Un curseur est fourni dans l'interface utilisateur pour permettre aux utilisateurs de régler dynamiquement la distance de séparation entre les véhicules, offrant ainsi une expérience interactive et personnalisable.
 
 ### Évitement de la Zone devant le Leader
-- **Zone d'Évitement** : Une zone d'évitement est calculée et visualisée devant le leader, par exemple avec un rayon de 40 pixels.
+- **Zone d'Évitement** : Une zone d'évitement est calculée et visualisée devant le leader, par un rayon de 40 pixels.
 - **Réaction Dynamique** : Lorsqu'un véhicule (autre que le leader) pénètre dans cette zone, il active un comportement d'évitement (`evade`) pour s'éloigner rapidement de cette zone, assurant ainsi une navigation sûre et fluide.
 
 ### Comportement d'Évasion
 - **Réaction à la Proximité** : Le comportement d'`evade` est utilisé comme l'inverse de `pursue`. Lorsqu'un véhicule se retrouve trop proche de la zone d'évitement devant le leader, il s'éloigne de ce point, évitant ainsi les collisions et les embouteillages.
 
-   
+## Démo
 
 
