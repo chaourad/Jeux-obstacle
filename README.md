@@ -3,11 +3,7 @@
 ## Description
 Ce projet est une simulation interactive en 2D mettant en scène des véhicules et des obstacles dans un environnement créatif. Utilisant p5.js, une bibliothèque JavaScript reconnue pour son potentiel artistique, le projet simule des véhicules capables de poursuivre des cibles, d'éviter des obstacles de manière dynamique et de suivre un leader. Cette simulation offre un aperçu captivant des comportements autonomes dans un espace bidimensionnel.
 
-## Fonctionnalités
-- **Comportements Dynamiques des Véhicules** : Les véhicules dans la simulation démontrent une variété de comportements autonomes. Ils peuvent chercher activement des cibles, éviter des obstacles de manière adaptative en fonction des entrées utilisateur, et suivre un leader.
-- **Interaction avec l'Utilisateur** : Cette simulation interactive permet aux utilisateurs d'influencer directement le comportement des véhicules et de leur environnement. Utilisez le clavier pour modifier les paramètres de simulation en temps réel, et la souris pour placer des obstacles sur la toile, offrant une expérience utilisateur riche et engageante.
 
-## Installation 
 ## Installation 
 
 Pour installer et lancer ce projet sur votre machine, suivez ces étapes :
@@ -23,6 +19,25 @@ Pour installer et lancer ce projet sur votre machine, suivez ces étapes :
 
 5.  **Lancer le Projet** : Faites un clic droit sur le fichier index.html dans l'explorateur de fichiers de Visual Studio Code et sélectionnez Open with Live Server. Cela ouvrira le projet dans votre navigateur par défaut.
 
+## Fonctionnalités
+
+### Suivi du Leader
+- **Leader Suivant la Souris** : Le leader suit le mouvement de la souris, utilisant un comportement de `seek` ou `arrive` pour se déplacer de manière fluide et réactive.
+- **Queue leu leu** : Les véhicules suivent un point spécifique situé juste derrière le leader ou le véhicule qui les précède. Ce point est calculé en fonction de la position et de la direction du véhicule précédent, permettant ainsi une file ordonnée et organisée.
+
+### Comportement d'Arrivée
+- Les véhicules, à l'exception du leader, utilisent le comportement d'`arrive` pour se diriger vers un point derrière le véhicule qui les précède. Cela leur permet de maintenir une distance constante avec le leader tout en suivant son chemin.
+
+### Comportement de Séparation
+- **Évitement de Collision** : Un comportement de séparation est implémenté pour prévenir les collisions et les superpositions entre véhicules.
+- **Contrôle Utilisateur** : Un curseur est fourni dans l'interface utilisateur pour permettre aux utilisateurs de régler dynamiquement la distance de séparation entre les véhicules, offrant ainsi une expérience interactive et personnalisable.
+
+### Évitement de la Zone devant le Leader
+- **Zone d'Évitement** : Une zone d'évitement est calculée et visualisée devant le leader, par exemple avec un rayon de 40 pixels.
+- **Réaction Dynamique** : Lorsqu'un véhicule (autre que le leader) pénètre dans cette zone, il active un comportement d'évitement (`evade`) pour s'éloigner rapidement de cette zone, assurant ainsi une navigation sûre et fluide.
+
+### Comportement d'Évasion
+- **Réaction à la Proximité** : Le comportement d'`evade` est utilisé comme l'inverse de `pursue`. Lorsqu'un véhicule se retrouve trop proche de la zone d'évitement devant le leader, il s'éloigne de ce point, évitant ainsi les collisions et les embouteillages.
 
    
 
