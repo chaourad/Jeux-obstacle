@@ -8,7 +8,22 @@ Ce projet est une simulation interactive en 2D mettant en scène des véhicules 
 - **Interaction avec l'Utilisateur** : Cette simulation interactive permet aux utilisateurs d'influencer directement le comportement des véhicules et de leur environnement. Utilisez le clavier pour modifier les paramètres de simulation en temps réel, et la souris pour placer des obstacles sur la toile, offrant une expérience utilisateur riche et engageante.
 
 ## Installation 
-1. Ouvrez un terminal sur votre ordinateur.
-2. Clonez le dépôt GitHub du projet en utilisant la commande :
+## Installation 
+
+Pour installer et lancer ce projet sur votre machine, suivez ces étapes :
+
+1. **Ouvrir un Terminal** : Sur votre ordinateur, ouvrez un terminal.
+
+2. **Cloner le Projet** : Clonez le dépôt GitHub du projet en utilisant la commande :
+   ```bash
+   git clone https://github.com/chaourad/Jeux-obstacle.git
+3. **Installer l'Extension Live Server** : Ouvrez Visual Studio Code. Si vous n'avez pas l'extension Live Server, installez-la. Pour cela, allez dans l'onglet des extensions, recherchez Live Server et cliquez sur installer.
+
+4. **Ouvrir le Projet** :Dans Visual Studio Code, ouvrez le dossier du projet que vous venez de cloner.
+
+5.  **Lancer le Projet ** : Faites un clic droit sur le fichier index.html dans l'explorateur de fichiers de Visual Studio Code et sélectionnez Open with Live Server. Cela ouvrira le projet dans votre navigateur par défaut.
+
+
+   
 
 
