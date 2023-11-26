@@ -35,7 +35,7 @@ function draw() {
   fill(255, 0, 0);
   noStroke();
   circle(target.x, target.y, 32);
-  text(`Vitesse: ${vehicules[0].vel.mag().toFixed(2)}`, 10, height - 20);
+  text(`Vitesse: ${vehicules[0].vel.mag().toFixed(2)}`, width - 150, 20); // Position en haut à droite de la page
   // dessin des obstacles
   // TODO
   obstacles.forEach(o => {
