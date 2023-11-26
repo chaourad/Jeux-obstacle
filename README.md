@@ -21,7 +21,7 @@ Pour installer et lancer ce projet sur votre machine, suivez ces étapes :
 
 4. **Ouvrir le Projet** :Dans Visual Studio Code, ouvrez le dossier du projet que vous venez de cloner.
 
-5.  **Lancer le Projet ** : Faites un clic droit sur le fichier index.html dans l'explorateur de fichiers de Visual Studio Code et sélectionnez Open with Live Server. Cela ouvrira le projet dans votre navigateur par défaut.
+5.  **Lancer le Projet** : Faites un clic droit sur le fichier index.html dans l'explorateur de fichiers de Visual Studio Code et sélectionnez Open with Live Server. Cela ouvrira le projet dans votre navigateur par défaut.
 
 
    
