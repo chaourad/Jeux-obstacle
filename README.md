@@ -41,4 +41,10 @@ Pour installer et lancer ce projet sur votre machine, suivez ces étapes :
 
 ## Démo
 
+Un système de navigation intelligente où le leader suit la souris, les véhicules se coordonnent en file grâce à un comportement d'arrivée, évitent les collisions avec un comportement de séparation, réagissent en temps réel pour éviter la zone de danger devant le leader, et ont des réflexes rapides pour éviter les obstacles, le tout avec une gestion précise de la distance de séparation
+
+
+
+
+
 
